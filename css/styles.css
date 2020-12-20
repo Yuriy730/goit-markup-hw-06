@@ -658,9 +658,51 @@ img {
 }
 /*===============EMAIL-SUB=====================*/
 .email-subscription {
-  display: flex;
   width: 570px;
+  margin-left: 93px;
 }
+.form-subscription {
+  display: flex;
+  justify-content: space-between;
+}
+.form-field-email {
+  margin-right: 10px;
+  width: 100%;
+  background-color: #2f303a;
+}
+.form-input {
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.modal-btn-send {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--primery-white-color);
+  background-color: var(--accent-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.modal-icon-send {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.9);
+}
+
 /*================BACKDROP============================*/
 .backdrop {
   position: fixed;
