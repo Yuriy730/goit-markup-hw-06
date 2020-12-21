@@ -500,41 +500,48 @@
       
       <b class="modal-slogan">Оставьте свои данные, мы вам перезвоним</b>
       <form class="modal-form">
+        
         <div class="modal-form-sender">
           <label for="name" class="modal-form-field">Имя</label>
-          <input type="text" class="modal-form-input" name="user-name" id="name">
-          <svg class="icon-user">
-            <use href="./images/images-hw-04/icons/sprite.svg#icon-person-black"></use>
-          </svg>
+          <div class="modal-form-input-wrapper">
+            <input type="text" class="modal-form-input" name="user-name" id="name">
+            <svg class="modal-form-icon">
+              <use href="./images/images-hw-04/icons/sprite.svg#icon-person-black"></use>
+            </svg>
+          </div>
         </div>
        
         <div class="modal-form-sender">
           <label for="number" class="modal-form-field">Телефон</label>
-          <input type="tel" class="modal-form-input" name="user-number" id="number">
-          <svg class="icon-user">
-            <use href="./images/images-hw-04/icons/sprite.svg#icon-phone-black"></use>
-          </svg>
+          <div class="modal-form-input-wrapper">
+            <input type="tel" class="modal-form-input" name="user-number" id="number">
+            <svg class="modal-form-icon">
+              <use href="./images/images-hw-04/icons/sprite.svg#icon-phone-black"></use>
+            </svg>
+          </div>
         </div>
         
         <div class="modal-form-sender">
           <label for="mail" class="modal-form-field">Почта</label>
-          <input type="email" class="modal-form-input" name="user-mail" id="mail">
-          <svg class="icon-user">
-            <use href="./images/images-hw-04/icons/sprite.svg#icon-email-black"></use>
-          </svg>
+          <div class="modal-form-input-wrapper">
+            <input type="email" class="modal-form-input" name="user-mail" id="mail">
+            <svg class="modal-form-icon">
+              <use href="./images/images-hw-04/icons/sprite.svg#icon-email-black"></use>
+            </svg>
+          </div>
         </div>
         
-        <div class="modal-form-sender">
+        <div class="modal-form-fillup">
           <label for="textarea" class="modal-form-field">Комментарий</label>
           <textarea class="modal-form-message" name="user-remark" id="textarea" placeholder="Введите текст"></textarea>
         </div>
         
-        <div>
-          <input type="checkbox" class="user-policy" value="accept-policy">
-          <label class="policy-agreement">Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a></label>
+        <div class="user-agreement">
+          <input type="checkbox" class="user-policy visually-hidden" id="checkbox" value="accept-policy">
+          <label for="checkbox" class="policy-agreement">Соглашаюсь с рассылкой и принимаю<a href="#" class="subject-agreement">Условия договора</a></label>
         </div>
        
-        <button type="submit" class="modal-btn">Отправить</button>
+        <button type="submit" class="modal-form-btn">Отправить</button>
       
       </form>
       
