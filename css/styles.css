@@ -589,6 +589,7 @@ img {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--primery-white-color);
+  text-decoration: none;
 }
 .address-mail-item {
   margin-bottom: 9px;
